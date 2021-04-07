@@ -1,0 +1,48 @@
+//colors definition
+
+// $mainColor : #fff;
+// $mainColorTransparent : #ffffff3b; 
+// $decorationColor : #5c86e6;
+// $decorationColorComplemantaryBase : #e6bc5c;
+// $accordingColor : #ededeb;
+// $paragrapheTitleColor : #333333;
+// $darkColor : #000;
+
+$mainColor : #fff;
+$mainColorTransparent : #ffffff3b; 
+$decorationColor : #5c86e6;
+$decorationColorComplemantaryBase : #e6bc5c;
+$accordingColor : #eeeeec;
+$paragrapheTitleColor : #333;
+$darkColor : #000;
+
+//fonts definition
+@font-face{
+    src: url('/fonts/Pacifico-Regular.ttf');
+    font-family: 'pasifico-regular';
+}
+
+@font-face{
+    src: url('/fonts/Roboto-Regular.ttf');
+    font-family: 'roboto-regular';
+}
+
+$logofont : url('/fonts/Pacifico-Regular.ttf');
+$mainfont : url('/fonts/Roboto-Regular.ttf');
+
+//backcgrounds definition
+$backgroundBanner : url('/images/pc1.jpg');
+$photoBanner : url('/images/my.png');
+$wave : url('/images/waves.jpg');
+
+//animation's delay
+$rotatetime : 10s;
+
+/*
+    all title is in uppercase and others in lowercase
+*/
+
+//file's import
+
+
+@import 'introduction.scss', 'header.scss', 'about.scss', 'skills.scss', 'projects.scss', 'footer.scss';

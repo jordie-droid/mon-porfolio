@@ -1,0 +1,86 @@
+    .about{
+        height: 100vh;
+        &.about--style{
+            background-color: #fff;
+            color: #000;
+        }
+    .about__about-container{
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        height: 100%;            
+        background: -webkit-linear-gradient(45deg, #fff 46%, #ecebe94f 0%);
+        .about-container__cite-image{
+            width: 30%;
+            height: 80%;
+            background-color: #F9F8F8;
+            border-bottom-right-radius: 20%;
+            .about-container__image-container{
+                width: 99%;
+                &.image-container--style{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    overflow: hidden;
+                    border-bottom-right-radius: 50%;
+                    background-color: #fff;
+                    padding-top: 40px;
+                }
+                img{
+                    width: 250px;
+                    height: auto;
+                }
+            }
+            .citation{
+                position: relative;
+                font-size: 1.07em;
+                font-family: 'roboto-bold';
+                line-height: 20px;
+                width: 280px;
+                padding: 10px;
+                border: solid 5px #5a5a5a;
+                background-color: #E8566A;
+                border-top-color: #E8566A;
+                border-radius: 20px;
+                position: relative;
+                text-align: justify;
+                color: #fff;
+                margin: auto;
+                top: 20px;
+                z-index: 10;
+            }
+
+            .citation::after{
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                display: block;
+                background-color: #E8566A;
+                top: -30%;
+                left: 30%;
+                z-index: -1;
+                transform: rotate(45deg);
+            }
+        }
+
+        .about-container__text-content-container{
+            width: 60%;
+            .text-content-container__main-title{
+                margin-bottom: 40px;
+                font-family: 'roboto-bold';
+                font-size: 3em;
+                text-transform: uppercase;
+                color: #5a5a5a;
+            }
+            
+            &.text-content-container--style{                
+                padding-top: 80px;
+                .text-content--container__text{
+                    font-family: 'roboto-regular';
+                    position: relative;
+                }
+            }
+        }
+    }
+}

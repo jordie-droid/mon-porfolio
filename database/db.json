@@ -1,0 +1,52 @@
+{
+    "person":[
+        {
+            "id": 1,
+            "firstName": "Jordie",
+            "lastName": "Lutundula",
+            "Phone": "+243813294109",
+            "mail": "redilutunx@gmail.com",
+            "github": "",
+            "idiomskills": [
+                {
+                    "language": "English",
+                    "percent" : 60
+                },
+                {
+                    "language": "French",
+                    "percent": 70
+                },
+                {
+                    "language": "Kinyarwanda",
+                    "percent": 20
+                },
+                {
+                    "language": "Lingala",
+                    "percent": 85
+                },
+                {
+                    "language": "Swahili",
+                    "percent": 60
+                }
+            ],
+            "computerSkills": [
+                {
+                    "logo": "images/skillsimages/javascript.svg",
+                    "designation": "Java"
+                },
+                {
+                    "logo": "images/skillsimages/file-type-html.svg",
+                    "designation": "Html"
+                },
+                {
+                    "logo": "images/skillsimages/file-type-css.svg",
+                    "designation": "Css"
+                },
+                {
+                    "logo": "images/skillsimages/javascript.svg",
+                    "designation": "JavaScript"
+                }
+            ]
+        }
+    ]
+}

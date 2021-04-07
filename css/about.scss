@@ -1,0 +1,389 @@
+.round--container{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.gray--color{
+    background-color: $accordingColor;
+}
+
+.techno--position1{
+    position: relative;
+    left: 0;
+    top: 0%;
+}
+
+.techno--position2{
+    position: relative;
+    top: -5%;
+    right: -60%;
+}
+
+.techno--position3{
+    position: relative;
+    top: 83%;
+    right: -60%;
+}
+
+.techno--position4{
+    position: relative;
+    top: 83%;
+    right: 0;
+}
+
+.main--title{
+    font-family: 'roboto-regular';
+    font-size: 2em;
+    color: $paragrapheTitleColor;
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+.all--techno{
+    .techno--container{
+        position: absolute;
+        z-index: -1;
+        width: 90%;
+        height: 90%;
+        .techno--rotate{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $accordingColor;
+            width: 25%;
+            height: 25%;
+            transform: rotate(45deg);
+            animation: no-rotation 3s infinite;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .techno--rotate::before, .techno--rotate::after{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 20%;
+            background-color: $paragrapheTitleColor;
+        }
+
+        .techno--rotate::before{
+            transform: skew(45deg);
+            bottom: -20%;
+            left: 10%;
+        }
+
+        .techno--rotate::after{
+            width: 20%;
+            height: 105%;
+            transform: skewY(45deg);
+            top: 6%;
+            left: 100%;
+        }
+    }
+}
+
+@keyframes rotate-tech{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) scaleY(1.1);
+    }
+}
+
+@keyframes no-rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+//large screen
+.about{
+    background: -webkit-linear-gradient(45deg, $accordingColor 46%, $mainColor 0%);
+    .about__about-container{
+        display: flex;
+        padding: 80px 0 80px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin: 0 0 0 20px;
+        .about-container__text-container{
+            width: 50%;
+            border-radius: 20px;
+            background-color: $mainColor;
+            box-shadow: 0 0 4px $accordingColor;
+            padding: 0 10px;
+            .text-container{
+                padding: 0 20px;
+                font-family: 'roboto-regular';
+                font-size: 1.05em;
+                .cv--button{
+                    display: block;
+                    background-color: $accordingColor;
+                    color: $paragrapheTitleColor;
+                    border: solid 2px $decorationColor;
+                    width: 180px;
+                    margin: 50px 0;
+                    text-align: center;
+                    padding: 10px;
+                    text-decoration: none;
+                    border-radius: 20px;
+                    transition: .3s linear;
+                }
+                .cv--button:hover{
+                    box-shadow: 0 0 10px $decorationColor;
+                }
+                p{
+                    a{
+                        color: $decorationColor;
+                    }
+                    strong{
+                        font-weight: inherit;
+                        color: $decorationColor;
+                    }
+                }
+            }
+        }
+
+        .about-container__image{
+            position:relative;
+            padding: 5% 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .image--logo-around{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 50px $accordingColor;
+                width: 300px;
+                height: 300px;
+                border-radius: 100%;
+                animation: rotate-tech $rotatetime infinite;
+                .image__container{
+                    width: 200px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 100%;
+                    box-shadow: 0 0 50px $accordingColor;
+                    animation: no-rotation $rotatetime infinite;
+                    overflow: hidden;
+                    img{
+                        width: 200px;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+            }
+            blockquote{
+                margin-top: 100px;
+                font-family: 'roboto-regular';
+                font-size: 1em;
+                color: $decorationColor;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//small screen
+@media screen and (max-width:1024px){
+    .round--container{
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gray--color{
+        background-color: $accordingColor;
+    }
+
+    .techno--position1{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .techno--position2{
+        position: relative;
+        top: 0%;
+        right: -25%;
+    }
+
+    .techno--position3{
+        position: relative;
+        top: 80%;
+        right: 55%;
+    }
+
+    .techno--position4{
+        position: relative;
+        top: 80%;
+        left: 80%;
+    }
+
+    .main--title{
+        font-family: 'roboto-regular';
+        font-size: 1rem;
+    }
+
+    .all--techno{
+        .techno--container{
+            position: absolute;
+            z-index: -1;
+            width: 40%;
+            height: 40%;
+            .techno--rotate{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $accordingColor;
+                width: 40%;
+                height: 40%;
+                transform: rotate(45deg);
+                animation: no-rotation 3s infinite;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            .techno--rotate::before, .techno--rotate::after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 20%;
+                background-color: $paragrapheTitleColor;
+            }
+
+            .techno--rotate::before{
+                transform: skew(45deg);
+                bottom: -20%;
+                left: 10%;
+            }
+
+            .techno--rotate::after{
+                width: 20%;
+                height: 105%;
+                transform: skewY(45deg);
+                top: 6%;
+                left: 100%;
+            }
+        }
+    }
+
+    @keyframes rotate-tech{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg) scaleY(1.1);
+        }
+    }
+
+    @keyframes no-rotation{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+
+    .about{
+        .about__about-container{
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 80px 0 80px;
+            justify-content: space-around;
+            align-items: center;
+            overflow: hidden;
+            .about-container__text-container{
+                width: 90%;
+                border-radius: 20px;
+                box-shadow: 0 0 4px $accordingColor;
+                .text-container{
+                    font-family: 'roboto-regular';
+                    font-size: 0.7em;
+                    .cv--button{
+                        display: block;
+                        width: 180px;
+                        color: $paragrapheTitleColor;
+                        margin: 50px 0;
+                        text-align: center;
+                        padding: 10px;
+                        text-decoration: none;
+                        border-radius: 20px;
+                        width: 155px;
+                        border: solid 1px $decorationColor;
+                        transition: .3s linear;
+                    }
+                    .cv--button:hover{
+                        box-shadow: 0 0 10px $decorationColor;
+                    }
+                    p{
+                        a{
+                            text-decoration: none;
+                            color: $decorationColor;
+                        }
+                        strong{
+                            color: $decorationColor;
+                        }
+                    }
+                }
+            }
+
+            .about-container__image{
+                position:relative;
+                margin: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .image--logo-around{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0 0 50px $accordingColor;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 100%;
+                    animation: rotate-tech $rotatetime infinite;
+                    .image__container{
+                        width: 150px;
+                        height: 150px;
+                        display: flex;
+                        border-radius: 100%;
+                        box-shadow: 0 0 50px $accordingColor;
+                        animation: no-rotation $rotatetime infinite;
+                        overflow: hidden;
+                        img{
+                            width: 150px;
+                            height: auto;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                blockquote{
+                    margin-top: 100px;
+                    font-family: 'roboto-regular';
+                    font-size: 1em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

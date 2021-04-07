@@ -1,0 +1,48 @@
+.introduction{
+    height: 100vh;
+    &.introduction--style{        
+        background-image: url('/images/pc1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .main--title{
+        position: relative;
+        width: 39ch;
+        left: 50%;
+        top: 50%;
+        padding: 0;
+        transform: translate(-50%,-50%);
+        animation: animation-type 4s steps(22) infinite;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: solid 2px $paragrapheTitleColor;
+    }
+}
+
+@media screen and (max-width:390px){
+    .introduction{
+        .main--title{
+            font-size: 70%;
+            position: relative;
+            width: 39ch;
+            left: 50%;
+            top: 50%;
+            padding: 0;
+            transform: translate(-50%,-50%);
+            animation: animation-type 4s steps(22) infinite;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: solid 2px $paragrapheTitleColor;
+        }
+    }
+}
+
+@keyframes animation-type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 41ch;
+    }
+}
