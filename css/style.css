@@ -13,7 +13,7 @@
   height: 100vh;
 }
 .introduction.introduction--style {
-  background-image: url("images/pc1.jpg");
+  background-image: url("../images/pc1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
