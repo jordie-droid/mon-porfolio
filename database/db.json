@@ -31,19 +31,19 @@
             ],
             "computerSkills": [
                 {
-                    "logo": "images/skillsimages/javascript.svg",
+                    "logo": "https://res.cloudinary.com/doxk0udlk/image/upload/v1617783275/java_ojlnh9.svg",
                     "designation": "Java"
                 },
                 {
-                    "logo": "images/skillsimages/file-type-html.svg",
+                    "logo": "https://res.cloudinary.com/doxk0udlk/image/upload/v1617783275/javascript_xrusu9.svg",
                     "designation": "Html"
                 },
                 {
-                    "logo": "images/skillsimages/file-type-css.svg",
+                    "logo": "https://res.cloudinary.com/doxk0udlk/image/upload/v1617783275/file-type-css_omdj3c.svg",
                     "designation": "Css"
                 },
                 {
-                    "logo": "images/skillsimages/javascript.svg",
+                    "logo": "https://res.cloudinary.com/doxk0udlk/image/upload/v1617783275/file-type-html_wzlf71.svg",
                     "designation": "JavaScript"
                 }
             ]
