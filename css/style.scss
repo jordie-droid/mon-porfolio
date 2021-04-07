@@ -18,22 +18,22 @@ $darkColor : #000;
 
 //fonts definition
 @font-face{
-    src: url('/fonts/Pacifico-Regular.ttf');
+    src: url('../fonts/Pacifico-Regular.ttf');
     font-family: 'pasifico-regular';
 }
 
 @font-face{
-    src: url('/fonts/Roboto-Regular.ttf');
+    src: url('../fonts/Roboto-Regular.ttf');
     font-family: 'roboto-regular';
 }
 
-$logofont : url('/fonts/Pacifico-Regular.ttf');
-$mainfont : url('/fonts/Roboto-Regular.ttf');
+$logofont : url('../fonts/Pacifico-Regular.ttf');
+$mainfont : url('../fonts/Roboto-Regular.ttf');
 
 //backcgrounds definition
-$backgroundBanner : url('/images/pc1.jpg');
-$photoBanner : url('/images/my.png');
-$wave : url('/images/waves.jpg');
+$backgroundBanner : url('../images/pc1.jpg');
+$photoBanner : url('../images/my.png');
+$wave : url('../images/waves.jpg');
 
 //animation's delay
 $rotatetime : 10s;
