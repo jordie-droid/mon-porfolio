@@ -36,9 +36,9 @@
     font-family: 'roboto-regular';
     font-size: 2em;
     color: $paragrapheTitleColor;
-    text-align: center;
     padding: 40px 0;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .all--techno{
@@ -109,7 +109,7 @@
     background: -webkit-linear-gradient(45deg, $accordingColor 46%, $mainColor 0%);
     .about__about-container{
         display: flex;
-        padding: 80px 0 80px;
+        padding: 80px 0 0px;
         justify-content: center;
         align-items: center;
         overflow: hidden;
@@ -120,6 +120,10 @@
             background-color: $mainColor;
             box-shadow: 0 0 4px $accordingColor;
             padding: 0 10px;
+            .main--title{
+                text-align: left;
+                margin-left: 20px;
+            }
             .text-container{
                 padding: 0 20px;
                 font-family: 'roboto-regular';
@@ -129,10 +133,10 @@
                     background-color: $accordingColor;
                     color: $paragrapheTitleColor;
                     border: solid 2px $decorationColor;
-                    width: 180px;
+                    width: 150px;
                     margin: 50px 0;
                     text-align: center;
-                    padding: 10px;
+                    padding: 0 10px;
                     text-decoration: none;
                     border-radius: 20px;
                     transition: .3s linear;
@@ -159,6 +163,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-left: -10px;
             .image--logo-around{
                 position: relative;
                 display: flex;
@@ -180,7 +185,7 @@
                     animation: no-rotation $rotatetime infinite;
                     overflow: hidden;
                     img{
-                        width: 200px;
+                        width: 150px;
                         height: auto;
                         object-fit: cover;
                     }
@@ -190,7 +195,7 @@
                 margin-top: 100px;
                 font-family: 'roboto-regular';
                 font-size: 1em;
-                color: $decorationColor;
+                color: $paragrapheTitleColor;
                 text-align: center;
             }
         }
@@ -306,10 +311,11 @@
         .about__about-container{
             display: flex;
             flex-direction: column-reverse;
-            padding: 80px 0 80px;
+            padding: 80px 0 0px;
             justify-content: space-around;
             align-items: center;
             overflow: hidden;
+            margin: 0;
             .about-container__text-container{
                 width: 90%;
                 border-radius: 20px;
@@ -319,14 +325,13 @@
                     font-size: 0.7em;
                     .cv--button{
                         display: block;
-                        width: 180px;
+                        width: 100px;
                         color: $paragrapheTitleColor;
                         margin: 50px 0;
                         text-align: center;
-                        padding: 10px;
+                        padding: 0 10px;
                         text-decoration: none;
                         border-radius: 20px;
-                        width: 155px;
                         border: solid 1px $decorationColor;
                         transition: .3s linear;
                     }
@@ -358,20 +363,20 @@
                     justify-content: center;
                     align-items: center;
                     box-shadow: 0 0 50px $accordingColor;
-                    width: 200px;
-                    height: 200px;
+                    width: 300px;
+                    height: 300px;
                     border-radius: 100%;
                     animation: rotate-tech $rotatetime infinite;
                     .image__container{
-                        width: 150px;
-                        height: 150px;
+                        width: 200px;
+                        height: 200px;
                         display: flex;
                         border-radius: 100%;
                         box-shadow: 0 0 50px $accordingColor;
                         animation: no-rotation $rotatetime infinite;
                         overflow: hidden;
                         img{
-                            width: 150px;
+                            width: 100px;
                             height: auto;
                             object-fit: cover;
                         }

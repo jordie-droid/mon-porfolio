@@ -14,31 +14,26 @@
     margin: 20px;
 }
 
-@keyframes speak{
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-
 //for large screens
 .skills{
     background: -webkit-linear-gradient(45deg, $mainColor 46%, $accordingColor 0%);
-    padding: 50px 20px;
+    padding: 20px 100px 70px;
     .skills__flex-box{
         display: flex;
         justify-content: space-between;
         padding: 20px;
         .flex-box__speak{
-            width: 40%;
+            width: 50%;
             height: 100%;
             padding: 15px;
+            margin-right: 10px;
             background-color: $mainColor;
             box-shadow: 0 0 10px $accordingColor;
             border-radius: 20px;
-            animation: speak 1s;
+            // animation: speak 1s;
+            .sub--title1{
+                margin-bottom: 30px;
+            }
             p{
                 font-family: 'roboto-regular';
                 font-size: 1rem;
@@ -64,11 +59,14 @@
             }
         }
         .flex-box__tech-skills{
-            width: 57%;
+            width: 50%;
             padding: 15px;
             border-radius: 20px;
             background-color: $mainColor;
             box-shadow: 0 0 10px $accordingColor;
+            .sub--title1{
+                margin-bottom: 30px;
+            }
             .tech-skills__grid{
                 font-family: 'roboto-regular';
                 font-size: 1.11rem;
@@ -76,7 +74,7 @@
                 grid-template-columns: repeat(2,1fr);
                 gap: 10px;
                 .grid__skills-container{
-                    padding: 15px;
+                    // padding: 15px;
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
                     background-color: $mainColor;
@@ -86,14 +84,14 @@
                     align-items: center;
                     justify-content: center;
                     .skills-container__round-container{
-                        background-color: $mainColor;
-                        box-shadow: 0 0 10px $accordingColor;
+                        background-color: $accordingColor;
                         border-radius: 50%;
                         width: 150px;
                         height: 150px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        margin-top: 10px;
                         margin-bottom: 10px;
                         img{
                             width: 100px;
@@ -114,7 +112,7 @@
 }
 
 // for small screens
-@media screen and (max-width:817px){
+@media screen and (max-width:934px){
     .sub--title1{
         font-size: 1rem;
     }
@@ -123,15 +121,19 @@
         .skills__flex-box{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
             .flex-box__speak{
-                width: 100%;
+                width: 80%;
                 height: 100%;
                 padding: 15px;
                 margin-bottom: 20px;
                 background-color: $mainColor;
                 box-shadow: 0 0 10px $accordingColor;
+                .sub--title1{
+                    margin-bottom: 30px;
+                }
                 border-radius: 20px;
                 p{
                     font-family: 'roboto-regular';
@@ -151,11 +153,14 @@
                 }
             }
             .flex-box__tech-skills{
-                width: 100%;
+                width: 80%;
                 padding: 15px;
                 border-radius: 20px;
                 background-color: $mainColor;
                 box-shadow: 0 0 10px $accordingColor;
+                .sub--title1{
+                    margin-bottom: 30px;
+                }
                 .tech-skills__grid{
                     font-family: 'roboto-regular';
                     font-size: 1.11rem;

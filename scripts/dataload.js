@@ -15,10 +15,37 @@
 //     });
 // });
 
+// Email.send({
+//     SecureToken : "752e1f6b-90d0-4dac-9fdd-4c7b83f577ec5",
+//     To : 'redilutunx@gmail.com',
+//     From : "mardoxheeluvuki@gmail.com",
+//     Subject : "This is the subject",
+//     Body : "And this is the body"
+// }).then(
+//   message => alert(message)
+// );
+
+(function() {
+    window.addEventListener('load', () => {
+        AOS.init({
+            duration: 1500,
+            easing: "ease-in-out",
+            once: true,
+            mirror: false
+        });
+    });
+})()
+
+
 //Load languages
+const techSkillsContainer = document.querySelector('.flex-box__tech-skills');
+//create tech-skills container
+const techSkills = document.querySelector('.tech-skills__grid');
+
 window.addEventListener("load", function(event) {
     const skillsContainer = document.querySelector('.flex-box__speak');
-    fetch("http://localhost:3000/person")
+    // fetch("http://localhost:3000/person")
+    fetch("https://my-json-server.typicode.com/jordie-droid/portfoliodatabase/person")
     .then(function(response){
         return response.json();
     })
@@ -59,11 +86,6 @@ window.addEventListener("load", function(event) {
             //for of tech skills
             for(let i = 0; i < person.computerSkills.length; i++){
                 //add programming languages
-                const techSkillsContainer = document.querySelector('.flex-box__tech-skills');
-                //create tech-skills container
-                const techSkills = document.createElement('div');
-                //add it a class
-                techSkills.classList.add('tech-skills__grid');
                 //create grid__skills-container
                 const skillsContainer = document.createElement('div');
                 //add it a class

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="../css/mdb.min.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="" href="../javascript animation/aos.css">
     <link rel="stylesheet" href="font-awesome.min.css">
     <title>Document</title>
 </head>
@@ -50,13 +52,13 @@
         </ul>
     </header>
     <main>
-        <section class="introduction introduction--style">
+        <section class="introduction introduction--style" data-aos="fade-down">
             <h1 class="main--title"> Hello !!! I'm Jordie Lutundula full-stack Developer</h1>
         </section>
         <section id="abouts" class="about">
             <div class="about__about-container">
-                <div class="about-container__text-container">
-                    <h1 class="main--title">About me</h1>
+                <div class="about-container__text-container" data-aos="fade-right">
+                    <h1 class="main--title" data-aos="fade-down">About me</h1>
                     <div class="text-container content--text">
                         <p>I am Jordie Lutundula, <strong>full-stack developer</strong>. Noowadays, I am a student at <strong>Kinshasa Digital Academy (KDA)</strong>. <strong>Computer science</strong> is the <strong>greatest passion</strong> of my life. All of my life depends on It.</p> <br>
                         <p>I'm undergraduate in <strong>Computer Science Management</strong> since <strong>2018</strong> at ISP/GOMBE</p>
@@ -64,45 +66,23 @@
                         <a class="cv--button" href="#">Download my CV</a>
                     </div>
                 </div>
-                <div class="about-container__image">
+                <div class="about-container__image" data-aos="fade-left">
                     <div class="image--logo-around">
                         <div class="image__container">
-                            <img src="images/my.png" alt="">
-                        </div>
-                        <div class="all--techno">                            
-                            <div class="techno--container techno--position1">
-                                <div class="techno--rotate">
-                                    <img src="images/content-settings-20-regular.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="techno--container techno--position2">
-                                <div class="techno--rotate">
-                                    <img src="images/browser-svgrepo-com.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="techno--container techno--position3">
-                                <div class="techno--rotate">
-                                    <img src="images/ux.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="techno--container techno--position4">
-                                <div class="techno--rotate">
-                                    <img src="images/ui.svg" alt="">
-                                </div>
-                            </div>
+                            <img src="../images/images1.png" alt="">
                         </div>
                     </div>
                     <blockquote>
-                        <p><strong>All What I know is that I know that I do not know anything.</strong></p>
+                        <p data-aos="fade-left"><strong>All What I know is that I know that I do not know anything.</strong></p>
                     </blockquote>
                 </div>
             </div>
         </section>
-        <section id="skills" class="skills dark">
-            <h1 class="main--title"> Skills</h1>
+        <section id="skills" class="skills">
+            <h1 class="main--title" data-aos="fade-right"> Skills</h1>
             <div class="skills__flex-box">
-                <div class="flex-box__speak">
-                    <h2 class="sub--title1">I speak</h2>
+                <div class="flex-box__speak" data-aos="fade-down">
+                    <h2 class="sub--title1" data-aos="fade-up">I speak</h2>
                     <!-- <p>English</p>
                     <div class="progress-bar-container">
                         <div class="progress-content">
@@ -134,10 +114,10 @@
                         </div>
                     </div> -->
                 </div>
-                <div class="flex-box__tech-skills">
-                    <h2 class="sub--title1">Few Programming Skills</h2>
-                    <!-- <div class="tech-skills__grid">
-                        <div class="grid__skills-container">
+                <div class="flex-box__tech-skills" data-aos="fade-up">
+                    <h2 class="sub--title1" data-aos="fade-down">Programming Skills</h2>
+                    <div class="tech-skills__grid">
+                        <!-- <div class="grid__skills-container">
                             <div class="skills-container__round-container">
                                 <img src="/images/skillsImages/java.svg" alt="">
                             </div>
@@ -168,36 +148,38 @@
                             <div class="skills-container__description">
                                 <h3 class="sub--title2">Javascript</h3>
                             </div>
-                        </div> 
-                    </div>-->
+                        </div>  -->
+                    </div>
                 </div>
             </div>
         </section>
         <section id="projects" class="projects">
-            <h1 class="main--title">Few projects</h1>
+            <h1 class="main--title" data-aos="fade-down">Recent projects</h1>
             <div class="projects__flex-box">
-                <div class="flex-box__project-container">
+                <div class="flex-box__project-container" data-aos="fade-left">
+                    <img src="images/kda.png" alt="">
+                    <div class="project-container__description">
+                        <h2 class="sub--title1">Suplopha</h2>
+                        <p>Logiciel de gestion de produit pharmaceutique basé sur la méthode <strong>Fifo</strong> ce qui diminue le risque de périssement de produit 
+                            il a avec son outil d'alerte, il informe l'utilisateur sur l'état de stock. 
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-box__project-container" data-aos="fade-up">
+                    <a href="https://jordie-droid.github.io/projetKDApages/index.html"><img src="images/kda.png" alt=""></a>
+                    <h2 class="sub--title1">Kda web site</h2>
+                    <div class="project-container__description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officia, blanditiis ullam placeat ipsum nihil est aliquam molestias magnam tempore error? Corrupti, deserunt. Laudantium, voluptas perspiciatis quae recusandae placeat natus?</p>
+                    </div>
+                </div>
+                <div class="flex-box__project-container" data-aos="fade-down">
                     <a href=""><img src="images/kda.png" alt=""></a>
                     <h2 class="sub--title1">Kda web site</h2>
                     <div class="project-container__description">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officia, blanditiis ullam placeat ipsum nihil est aliquam molestias magnam tempore error? Corrupti, deserunt. Laudantium, voluptas perspiciatis quae recusandae placeat natus?</p>
                     </div>
                 </div>
-                <div class="flex-box__project-container">
-                    <a href=""><img src="images/kda.png" alt=""></a>
-                    <h2 class="sub--title1">Kda web site</h2>
-                    <div class="project-container__description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officia, blanditiis ullam placeat ipsum nihil est aliquam molestias magnam tempore error? Corrupti, deserunt. Laudantium, voluptas perspiciatis quae recusandae placeat natus?</p>
-                    </div>
-                </div>
-                <div class="flex-box__project-container">
-                    <a href=""><img src="images/kda.png" alt=""></a>
-                    <h2 class="sub--title1">Kda web site</h2>
-                    <div class="project-container__description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officia, blanditiis ullam placeat ipsum nihil est aliquam molestias magnam tempore error? Corrupti, deserunt. Laudantium, voluptas perspiciatis quae recusandae placeat natus?</p>
-                    </div>
-                </div>
-                <div class="flex-box__project-container">
+                <div class="flex-box__project-container" data-aos="fade-right">
                     <a href=""><img src="images/kda.png" alt=""></a>
                     <h2 class="sub--title1">Kda web site</h2>
                     <div class="project-container__description">
@@ -206,43 +188,54 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer id="contacts" class="contacts">
-        <h1 class="main--title">Contact-me</h1>
-        <div class="contacts__flex-container">
-            <div class="flex-container__phone">
-                <div class="my-contacts__phone-container">
-                    <a href="tel:+243970307733">
-                        <img src="../images/phone-filled.svg" alt="">
-                    </a>
-                </div> 
-                <a href="tel:+243970307733">+243970307733</a>
+        <section id="contacts" class="contacts">
+            <h1 class="main--title">Contact-me</h1>
+            <div class="contacts__contacts" data-aos="fade-up">
+                <div class="contacts__flex-container">
+                    <div class="flex-container__phone">
+                        <div class="my-contacts__phone-container">
+                            <a href="tel:+243970307733">
+                                <img src="../images/phone-filled.svg" alt="">
+                            </a>
+                        </div> 
+                        <a id="tel" href="tel:+243970307733">+243970307733</a>
+                    </div>
+                    <div class="my-contacts__gmail">
+                        <a href="#">
+                            <img src="../images/gmail.svg" alt="">
+                        </a>
+                        <a href="mailto:redilutunx@gmail.com">redilutunx@gmail.com</a>
+                    </div>            
+                    <div class="my-contacts__github">
+                        <a href="https://github.com/jordie-droid?tab=repositories">
+                            <img src="../images/github-fill.svg" alt="">
+                        </a>
+                        <a href="https://github.com/jordie-droid?tab=repositories"> Jordie-Droid</a>
+                    </div>
+                    <div class="my-contacts__linkedin">
+                        <a href="https://www.linkedin.com/in/jordie-lutundula-8227311ba/">
+                            <img src="../images/linkedin-fill.svg" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jordie-lutundula-8227311ba/"> Jordie Lutundula</a>
+                    </div>
+                </div>
             </div>
-            <div class="my-contacts__gmail">
-                <a href="#">
-                    <img src="../images/gmail.svg" alt="">
+            <div class="go-up"> 
+                <a href="#abouts">
+                    <img src="../images/arrow-up.svg" alt="">
                 </a>
-                <a href="mailto:redilutunx@gmail.com">redilutunx@gmail.com</a>
-            </div>            
-            <div class="my-contacts__github">
-                <a href="https://github.com/jordie-droid?tab=repositories">
-                    <img src="../images/github-fill.svg" alt="">
-                </a>
-                <a href="https://github.com/jordie-droid?tab=repositories"> Jordie-Droid</a>
             </div>
-            <div class="my-contacts__linkedin">
-                <a href="https://www.linkedin.com/in/jordie-lutundula-8227311ba/">
-                    <img src="../images/linkedin-icon.svg" alt="">
-                </a>
-                <a href="https://www.linkedin.com/in/jordie-lutundula-8227311ba/"> Jordie Lutundula</a>
-            </div>
-        </div>
+        </section>
+    </main>    
+    <footer>        
         <div class="copy-right">
             <img src="../images/copyright-fill.svg" alt="">
             <p>Lutundula Group</p> 
         </div>
     </footer>
     <script src="../scripts/navBar.js"></script>
-    <script src="../scripts/loadlanguage.js"></script>
+    <script src="../scripts/dataload.js"></script>
+    <!-- <script src="../scripts/smtp.js"></script> -->
+    <script src="../javascript animation/aos.js"></script>
 </body>
 </html>
