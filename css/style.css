@@ -771,6 +771,7 @@
 }
 .projects .projects__flex-box .flex-box__project-container {
   width: 24%;
+  height: auto;
   background-color: #fff;
   padding: 0 0 20px;
   margin-bottom: 20px;
