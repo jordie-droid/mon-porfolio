@@ -10,7 +10,7 @@ barsMenu.addEventListener('click', function(){
     if(barsMenu.classList.contains('fa-bars')){
         barsMenu.classList.remove('fa-bars');
         barsMenu.classList.add('fa-close');
-        barsMenu.style.color = 'red';
+        barsMenu.style.color = 'black';
         navBar.classList.add('show-navbar');
     } else{
         barsMenu.classList.remove('fa-close');

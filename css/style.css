@@ -60,6 +60,10 @@
   box-sizing: border-box;
 }
 
+.active {
+  color: #5382A1;
+}
+
 .hide-navbar {
   display: none;
 }
